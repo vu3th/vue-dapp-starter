@@ -12,12 +12,12 @@
     "process": "^0.11.10",
     "util": "^0.12.4",
     "vue": "^3.2.16",
-    "vue-dapp": "^0.4.6",
+    "vue-dapp": "^0.5.1",
     "vue-router": "4"
   },
   "devDependencies": {
     "@rollup/plugin-inject": "^4.0.3",
-    "@vitejs/plugin-vue": "^1.9.2",
+    "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.4.3",
     "vite": "^2.6.0",
     "vite-plugin-windicss": "^1.4.8",

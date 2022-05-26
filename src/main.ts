@@ -8,8 +8,6 @@ import { VueDapp } from 'vue-dapp'
 const app = createApp(App)
 
 app.use(router)
-app.use(VueDapp, {
-  infuraId: '',
-})
+app.use(VueDapp)
 
 app.mount('#app')

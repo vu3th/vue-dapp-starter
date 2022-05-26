@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useBoard, useEthers, displayEther, shortenAddress } from 'vue-dapp'
+import { useBoard, useEthers, useWallet, displayEther, shortenAddress } from 'vue-dapp'
 
 const { open } = useBoard()
 const { address, balance, isActivated } = useEthers()
