@@ -11,15 +11,15 @@
     "ethers": "^5.5.2",
     "process": "^0.11.10",
     "util": "^0.12.4",
-    "vue": "^3.2.16",
+    "vue": "^3.2.25",
     "vue-dapp": "^0.5.2",
     "vue-router": "4"
   },
   "devDependencies": {
     "@rollup/plugin-inject": "^4.0.3",
     "@vitejs/plugin-vue": "^2.3.3",
-    "typescript": "^4.4.3",
-    "vite": "^2.9.9",
+    "typescript": "^4.5.4",
+    "vite": "2.6.0",
     "vite-plugin-windicss": "^1.4.8",
     "windicss": "^3.1.8"
   }
