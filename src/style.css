@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .btn {
   @apply px-6 py-3 rounded inline-block
     bg-gray-100 text-gray-600 cursor-pointer
