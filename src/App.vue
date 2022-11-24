@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import LayoutHeader from './components/LayoutHeader.vue'
 import { MetaMaskConnector, WalletConnectConnector, CoinbaseWalletConnector } from 'vue-dapp'
 
 const isDev = import.meta.env.DEV

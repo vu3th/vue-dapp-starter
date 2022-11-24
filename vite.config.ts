@@ -1,14 +1,28 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import path from 'path'
 import rollupPolyfillNode from 'rollup-plugin-polyfill-node'
 import nodeStdlibBrowser from 'node-stdlib-browser'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [vue()],
+	plugins: [
+		vue(),
+		// https://github.com/antfu/unplugin-auto-import#configuration
+		AutoImport({
+			imports: ['vue', 'vue-router'],
+			eslintrc: {
+				enabled: true,
+			},
+		}),
+		// https://github.com/antfu/unplugin-vue-components#configuration
+		Components(),
+	],
 	resolve: {
 		// Enable polyfill node used in development to prevent from vite's browser compatibility warning
-		alias: { ...nodeStdlibBrowser },
+		alias: { '@': path.resolve(__dirname, 'src'), ...nodeStdlibBrowser },
 	},
 	optimizeDeps: {
 		// Enable polyfill node used in development, refer to https://github.com/sodatea/vite-plugin-node-stdlib-browser/blob/b17f417597c313ecd52c3e420ba8fc33bcbdae20/index.cjs#L17
