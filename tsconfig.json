@@ -11,10 +11,18 @@
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 		"lib": ["esnext", "dom"],
+		// refer to https://github.com/vuejs/tsconfig/blob/main/tsconfig.json
+		"noImplicitThis": true, // `"noImplicitThis": true` is part of `strict`. Added again here in case some users decide to disable `strict`. This enables stricter inference for data properties on `this`.
+		"isolatedModules": true, // Required in Vite
+		"preserveValueImports": true, // For `<script setup>` See <https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/#preserve-value-imports>
+		"importsNotUsedAsValues": "error", // Enforce using `import type` instead of `import` for types
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true, // See <https://github.com/vuejs/vue-cli/pull/5688>
+
 		"paths": {
 			"@/*": ["./src/*"]
 		}
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "auto-imports.d.ts", "components.d.ts"],
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
 	"exclude": ["node_modules"]
 }

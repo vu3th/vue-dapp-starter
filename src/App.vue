@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { MetaMaskConnector, WalletConnectConnector, CoinbaseWalletConnector } from 'vue-dapp'
+import LayoutHeader from '@/components/LayoutHeader.vue'
 
 const isDev = import.meta.env.DEV
 const infuraId = isDev ? import.meta.env.VITE_INFURA_KEY : 'ff6a249a74e048f1b413cba715f98d07'

@@ -1,10 +1,9 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 
-// For info on using Vue Router with the Composition API, see https://next.router.vuejs.org/guide/advanced/composition-api.html
-
-const routes: Array<RouteRecordRaw> = [
+// https://next.router.vuejs.org/guide/advanced/composition-api.html
+const routes = [
 	{
 		path: '/',
 		name: 'Home',

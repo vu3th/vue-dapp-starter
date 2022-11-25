@@ -12,13 +12,16 @@ export default defineConfig({
 		vue(),
 		// https://github.com/antfu/unplugin-auto-import#configuration
 		AutoImport({
+			dts: 'src/auto-import.d.ts',
 			imports: ['vue', 'vue-router'],
 			eslintrc: {
 				enabled: true,
 			},
 		}),
 		// https://github.com/antfu/unplugin-vue-components#configuration
-		Components(),
+		Components({
+			dts: 'src/components.d.ts',
+		}),
 	],
 	resolve: {
 		// Enable polyfill node used in development to prevent from vite's browser compatibility warning
