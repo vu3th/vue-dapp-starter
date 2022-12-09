@@ -10,6 +10,8 @@
 	},
 	"dependencies": {
 		"ethers": "^5.7.2",
+		"maci-crypto": "0.9.1",
+		"maci-domainobjs": "0.7.4",
 		"node-stdlib-browser": "^1.2.0",
 		"vue": "^3.2.45",
 		"vue-dapp": "^0.6.2",

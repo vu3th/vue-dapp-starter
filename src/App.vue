@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { MetaMaskConnector, WalletConnectConnector, CoinbaseWalletConnector } from 'vue-dapp'
 import LayoutHeader from '@/components/LayoutHeader.vue'
+import { BigNumber } from 'ethers'
+import { genRandomSalt, IncrementalQuinTree } from 'maci-crypto'
+import { Keypair, PubKey, Command, Message } from 'maci-domainobjs'
+
+const salt = genRandomSalt()
+const spentTree = new IncrementalQuinTree(32, BigInt(0))
+
+console.log(salt, spentTree)
 
 const isDev = import.meta.env.DEV
 const infuraId = isDev ? import.meta.env.VITE_INFURA_KEY : 'ff6a249a74e048f1b413cba715f98d07'

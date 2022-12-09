@@ -8,6 +8,9 @@ import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	define: {
+		'process.env': {},
+	},
 	plugins: [
 		vue(),
 		// https://github.com/antfu/unplugin-auto-import#configuration
@@ -30,10 +33,12 @@ export default defineConfig({
 	optimizeDeps: {
 		// Enable polyfill node used in development, refer to https://github.com/sodatea/vite-plugin-node-stdlib-browser/blob/b17f417597c313ecd52c3e420ba8fc33bcbdae20/index.cjs#L17
 		esbuildOptions: {
+			target: 'esnext', // Enable Big integer literals
 			inject: [require.resolve('node-stdlib-browser/helpers/esbuild/shim')],
 		},
 	},
 	build: {
+		target: 'esnext', // Enable Big integer literals
 		rollupOptions: {
 			plugins: [
 				// Enable rollup polyfills plugin used in production bundling, refer to https://stackoverflow.com/a/72440811/10752354
