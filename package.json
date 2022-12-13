@@ -5,7 +5,7 @@
 		"build": "nuxt build",
 		"preview": "nuxt preview",
 		"generate": "nuxt generate",
-		"vercel-build": "yarn global add node-gyp-build && yarn build"
+		"vercel-build": "yarn global add node-gyp-build"
 	},
 	"devDependencies": {
 		"@nuxtjs/vercel-builder": "^0.24.0",
