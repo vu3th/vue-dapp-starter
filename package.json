@@ -1,11 +1,9 @@
 {
 	"private": true,
 	"scripts": {
-		"build": "nuxt build",
+		"build": " NITRO_PRESET=vercel-edge mkdir ./node_modules/unenv/runtime/node/events/index && cp  ./node_modules/unenv/runtime/node/events/index.cjs ./node_modules/unenv/runtime/node/events/index/.cjs && nuxt build",
 		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"start": "nuxi preview"
 	},
 	"devDependencies": {
 		"node-stdlib-browser": "^1.2.0",

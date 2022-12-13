@@ -2802,7 +2802,7 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
-destr@^1.2.0, destr@^1.2.1:
+destr@^1.2.0, destr@^1.2.1, destr@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/destr/-/destr-1.2.2.tgz#7ba9befcafb645a50e76b260449c63927b51e22f"
   integrity sha512-lrbCJwD9saUQrqUfXvl6qoM+QN3W7tLV5pAOs+OqOmopCCz/JkE05MHedJR1xfk4IAnZuJXPVuN5+7jNA2ZCiA==
@@ -3879,14 +3879,14 @@ gzip-size@^7.0.0:
     duplexer "^0.1.2"
 
 h3@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/h3/-/h3-1.0.1.tgz#1fc56ecfaba97a437db4a48e9f3b4a4b0b151e24"
-  integrity sha512-gDCGpRvjchZW2JBlTqbJ9IOs+mdkXXuwSQkSye+jubHAv/UhdamKqoQvd4RFgyBNjHSId8Y+b10UdTcPlP/V+w==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/h3/-/h3-1.0.2.tgz#3a2992921a62de697bd4a3f449401f7600116df6"
+  integrity sha512-25QqjQMz8pX1NI2rZ/ziNT9B8Aog7jmu2a0o8Qm9kKoH3zOhE+2icVs069h6DEp0g1Dst1+zKfRdRYcK0MogJA==
   dependencies:
     cookie-es "^0.5.0"
-    destr "^1.2.1"
+    destr "^1.2.2"
     radix3 "^1.0.0"
-    ufo "^1.0.0"
+    ufo "^1.0.1"
 
 har-schema@^2.0.0:
   version "2.0.0"
@@ -6690,9 +6690,9 @@ type-fest@^2.11.2:
   integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
 
 type-fest@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.3.0.tgz#3378c9664eecfd1eb4f0522b13cb0630bc1ec044"
-  integrity sha512-gezeeOIZyQLGW5uuCeEnXF1aXmtt2afKspXz3YqoOcZ3l/YMJq1pujvgT+cz/Nw1O/7q/kSav5fihJHsC/AOUg==
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.4.0.tgz#64a35b7748ab4a96b3e0c324475ea66643c5f9df"
+  integrity sha512-PEPg6RHlB9cFwoTMNENNrQFL0cXX04voWr2UPwQBJ3pVs7Mt8Y1oLWdUeMdGEwZE8HFFlujq8gS9enmyiQ8pLg==
 
 typedarray-to-buffer@3.1.5:
   version "3.1.5"
@@ -6706,7 +6706,7 @@ ufo@^0.8.6:
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.8.6.tgz#c0ec89bc0e0c9fa59a683680feb0f28b55ec323b"
   integrity sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==
 
-ufo@^1.0.0:
+ufo@^1.0.0, ufo@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.0.1.tgz#64ed43b530706bda2e4892f911f568cf4cf67d29"
   integrity sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==
