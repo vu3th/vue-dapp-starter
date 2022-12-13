@@ -3,6 +3,9 @@ import nodeStdlibBrowser from 'node-stdlib-browser'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	nitro: {
+		preset: 'vercel-edge',
+	},
 	vite: {
 		resolve: {
 			// Enable polyfill node used in development to prevent from vite's browser compatibility warning
