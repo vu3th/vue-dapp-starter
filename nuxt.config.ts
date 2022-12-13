@@ -1,29 +1,29 @@
-import { defineNuxtConfig } from 'nuxt'
-const webpack = require('webpack')
+import rollupPolyfillNode from 'rollup-plugin-polyfill-node'
+import nodeStdlibBrowser from 'node-stdlib-browser'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  builder: 'webpack',
-  hooks: {
-    'webpack:config'(configs) {
-      configs[0].resolve.fallback = {
-        assert: require.resolve('assert/'),
-        stream: require.resolve('stream-browserify'),
-        http: require.resolve('stream-http'),
-        https: require.resolve('https-browserify'),
-        os: require.resolve('os-browserify/browser'),
-        url: require.resolve('url/'),
-      }
-      configs[0].plugins.push(
-        new webpack.ProvidePlugin({
-          process: 'process/browser',
-        }),
-      )
-      configs[0].plugins.push(
-        new webpack.ProvidePlugin({
-          Buffer: ['buffer', 'Buffer'],
-        }),
-      )
-    },
-  },
+	vite: {
+		resolve: {
+			// Enable polyfill node used in development to prevent from vite's browser compatibility warning
+			alias: { ...nodeStdlibBrowser },
+		},
+		optimizeDeps: {
+			// Enable polyfill node used in development, refer to https://github.com/sodatea/vite-plugin-node-stdlib-browser/blob/b17f417597c313ecd52c3e420ba8fc33bcbdae20/index.cjs#L17
+			esbuildOptions: {
+				inject: [require.resolve('node-stdlib-browser/helpers/esbuild/shim')],
+			},
+		},
+		build: {
+			rollupOptions: {
+				plugins: [
+					// Enable rollup polyfills plugin used in production bundling, refer to https://stackoverflow.com/a/72440811/10752354
+					rollupPolyfillNode(),
+				],
+			},
+			commonjsOptions: {
+				transformMixedEsModules: true, // Enable @walletconnect/web3-provider which has some code in CommonJS
+			},
+		},
+	},
 })

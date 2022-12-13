@@ -1,6 +1,9 @@
-# Nuxt 3 + vue-dapp
+# Nuxt 3 Vue Dapp Starter
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+A minimal starter template that uses Nuxt 3 and Vue Dapp.
+
+- [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
+- [Vue Dapp](https://vue-dapp-docs.netlify.app/)
 
 ## Setup
 
@@ -39,4 +42,4 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

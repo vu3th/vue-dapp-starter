@@ -4,22 +4,17 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
-  },
-  "dependencies": {
-    "@nuxt/webpack-builder": "^3.0.0-rc.1",
-    "assert": "^2.0.0",
-    "https-browserify": "^1.0.0",
-    "os-browserify": "^0.3.0",
-    "stream-browserify": "^3.0.0",
-    "stream-http": "^3.2.0",
-    "url": "^0.11.0",
-    "vue-dapp": "^0.5.2"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "buffer": "^6.0.3",
-    "nuxt": "3.0.0-rc.1",
-    "process": "^0.11.10",
-    "vue-demi": "^0.12.5"
+    "@nuxtjs/vercel-builder": "^0.24.0",
+    "node-stdlib-browser": "^1.2.0",
+    "nuxt": "3.0.0",
+    "rollup-plugin-polyfill-node": "^0.11.0"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "vue-dapp": "^0.6.2"
   }
 }

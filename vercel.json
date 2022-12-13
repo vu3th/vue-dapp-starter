@@ -1,0 +1,22 @@
+{
+	"version": 2,
+	"routes": [
+		{
+			"src": "/api/hello",
+			"dest": "/api/hello.js"
+		}
+	],
+	"builds": [
+		{
+			"src": "api/**/*.js",
+			"use": "@vercel/node"
+		},
+		{
+			"src": "nuxt.config.ts",
+			"use": "@nuxtjs/vercel-builder",
+			"config": {
+				"serverFiles": ["api/**"]
+			}
+		}
+	]
+}
