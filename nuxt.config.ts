@@ -18,6 +18,7 @@ export default defineNuxtConfig({
 			},
 		},
 		build: {
+			chunkSizeWarningLimit: 2000, // prevent from some chunks are larger than 1000 KiB after minification.
 			rollupOptions: {
 				plugins: [
 					// Enable rollup polyfills plugin used in production bundling, refer to https://stackoverflow.com/a/72440811/10752354
