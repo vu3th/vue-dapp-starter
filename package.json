@@ -1,20 +1,21 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxtjs/vercel-builder": "^0.24.0",
-    "node-stdlib-browser": "^1.2.0",
-    "nuxt": "3.0.0",
-    "rollup-plugin-polyfill-node": "^0.11.0"
-  },
-  "dependencies": {
-    "ethers": "^5.7.2",
-    "vue-dapp": "^0.6.2"
-  }
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"vercel-build": "yarn global add node-gyp"
+	},
+	"devDependencies": {
+		"@nuxtjs/vercel-builder": "^0.24.0",
+		"node-stdlib-browser": "^1.2.0",
+		"nuxt": "3.0.0",
+		"rollup-plugin-polyfill-node": "^0.11.0"
+	},
+	"dependencies": {
+		"ethers": "^5.7.2",
+		"vue-dapp": "^0.6.2"
+	}
 }
