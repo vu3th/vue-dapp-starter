@@ -1,12 +1,11 @@
 {
 	"private": true,
 	"scripts": {
+		"dev": "nuxt",
 		"build": "nuxt build",
-		"dev": "nuxt dev",
+		"start": "nuxt start",
 		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"vercel-build": "yarn global add node-gyp"
+		"vercel-build": "yarn global add node-gyp-build"
 	},
 	"devDependencies": {
 		"@nuxtjs/vercel-builder": "^0.24.0",
