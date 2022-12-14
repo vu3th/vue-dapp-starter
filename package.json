@@ -1,12 +1,13 @@
 {
 	"private": true,
 	"scripts": {
-		"build": " NITRO_PRESET=vercel-edge mkdir ./node_modules/unenv/runtime/node/events/index && cp  ./node_modules/unenv/runtime/node/events/index.cjs ./node_modules/unenv/runtime/node/events/index/.cjs && nuxt build",
+		"build": "NITRO_PRESET=vercel-edge mkdir ./node_modules/unenv/runtime/node/events/index && cp  ./node_modules/unenv/runtime/node/events/index.cjs ./node_modules/unenv/runtime/node/events/index/.cjs && nuxt build",
 		"dev": "nuxt dev",
-		"start": "nuxi preview",
-		"generate": "nuxi generate"
+		"start": "nuxt preview",
+		"generate": "nuxt generate"
 	},
 	"devDependencies": {
+		"@rollup/plugin-inject": "^5.0.2",
 		"node-stdlib-browser": "^1.2.0",
 		"nuxt": "3.0.0",
 		"rollup-plugin-polyfill-node": "^0.11.0"
