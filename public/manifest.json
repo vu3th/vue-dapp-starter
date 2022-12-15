@@ -1,0 +1,16 @@
+{
+	"short_name": "vue3-dapp-starter",
+	"name": "Vue 3 Dapp starter",
+	"description": "Vue 3 Dapp starter for testing Safe App",
+	"icons": [
+		{
+			"src": "favicon.ico",
+			"sizes": "32x32",
+			"type": "image/x-icon"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#ff007a",
+	"background_color": "#fff"
+}
