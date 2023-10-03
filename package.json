@@ -10,13 +10,13 @@
 		"@coinbase/wallet-sdk": "3.1.0",
 		"@gnosis.pm/safe-apps-provider": "^0.15.1",
 		"@gnosis.pm/safe-apps-sdk": "^7.8.0",
-		"@walletconnect/ethereum-provider": "2.7.7",
-		"@walletconnect/modal": "^2.4.6",
+		"@walletconnect/ethereum-provider": "^2.10.1",
+		"@walletconnect/modal": "^2.6.2",
 		"@web3modal/standalone": "^2.4.3",
 		"ethers": "5.7.2",
 		"node-stdlib-browser": "^1.2.0",
 		"vue": "^3.3.4",
-		"vue-dapp": "0.9.2",
+		"vue-dapp": "^0.11.0",
 		"vue-router": "4"
 	},
 	"devDependencies": {
