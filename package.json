@@ -7,16 +7,12 @@
 		"serve": "vite preview"
 	},
 	"dependencies": {
-		"@coinbase/wallet-sdk": "3.1.0",
-		"@gnosis.pm/safe-apps-provider": "^0.15.1",
-		"@gnosis.pm/safe-apps-sdk": "^7.8.0",
-		"@walletconnect/ethereum-provider": "^2.10.1",
-		"@walletconnect/modal": "^2.6.2",
-		"@web3modal/standalone": "^2.4.3",
-		"ethers": "5.7.2",
+		"@vue-dapp/core": "^1.0.0-alpha.5",
+		"@vue-dapp/vd-board": "^1.0.0-alpha.4",
+		"ethers": "^6.8.1",
 		"node-stdlib-browser": "^1.2.0",
+		"pinia": "^2.1.7",
 		"vue": "^3.3.4",
-		"vue-dapp": "^0.11.0",
 		"vue-router": "4"
 	},
 	"devDependencies": {

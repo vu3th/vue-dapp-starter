@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { useBoard, useEthers, useWallet, displayEther, shortenAddress } from 'vue-dapp'
+import { useBoardStore } from '@vue-dapp/vd-board'
+import { useWalletStore, shortenAddress } from '@vue-dapp/core'
+import { storeToRefs } from 'pinia'
 
-const { open } = useBoard()
-const { address, balance, isActivated } = useEthers()
-const { disconnect, wallet } = useWallet()
+const { open } = useBoardStore()
+const { disconnect } = useWalletStore()
+const { address, status, isConnected } = storeToRefs(useWalletStore())
 
 const navigation: { name: string; href: string }[] = [
 	{
@@ -39,14 +41,14 @@ const navigation: { name: string; href: string }[] = [
 							{{ link.name }}
 						</router-link>
 
-						<div v-if="isActivated" class="flex items-center flex-col">
+						<div v-if="isConnected" class="flex items-center flex-col">
 							<!-- Account -->
 							<div class="sm:hidden py-2 px-3 rounded-2xl inline-block bg-gray-100">
 								{{ shortenAddress(address) }}
 							</div>
 
 							<div class="hidden sm:flex py-1 px-2 items-center rounded-3xl border border-solid">
-								<div class="px-1 mr-1">{{ displayEther(balance) }} ETH</div>
+								<div class="px-1 mr-1">ETH</div>
 								<div class="py-2 px-3 rounded-2xl inline-block bg-gray-100">
 									{{ shortenAddress(address) }}
 								</div>
@@ -56,14 +58,8 @@ const navigation: { name: string; href: string }[] = [
 							</div>
 						</div>
 
-						<button v-else @click="open()" class="btn" :disabled="wallet.status === 'connecting'">
-							{{
-								wallet.status === 'connecting'
-									? 'Connecting...'
-									: wallet.status === 'loading'
-									? 'Loading...'
-									: 'Connect'
-							}}
+						<button v-else @click="open()" class="btn" :disabled="status === 'connecting'">
+							{{ status === 'connecting' ? 'Connecting...' : 'Connect' }}
 						</button>
 					</div>
 				</div>
