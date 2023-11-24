@@ -93,10 +93,10 @@
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-3.2.0.tgz#a1484089dd85d6528f435743f84cdd0d215bbb54"
   integrity sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==
 
-"@vue-dapp/core@^1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@vue-dapp/core/-/core-1.0.0-alpha.5.tgz#d099230516f01d48f30af1c73e67ea7608ed21b0"
-  integrity sha512-tyil1qBZtWDR4GXtxlk3IsRAHjpl0INfPQ+8OisaGTwxIWt4ftps19m6zQHAjRB+e3qGy2ZTxd6+X+2OIwLtFw==
+"@vue-dapp/core@1.0.0-alpha.8":
+  version "1.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@vue-dapp/core/-/core-1.0.0-alpha.8.tgz#7a363827d5b3d7508995c39b6ebabed35521c947"
+  integrity sha512-BpxpLnNtqcTIaNdiOoabqPGUJNuOffkMuIjk3Az8xxVxqmsbtJZwAjRxPyw2OLodCmT/l550106M5Ghn/dKSgA==
   dependencies:
     tiny-invariant "^1.3.1"
 

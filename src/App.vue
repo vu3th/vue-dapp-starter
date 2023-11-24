@@ -27,6 +27,7 @@ const connectErrorHandler = (err: any) => {
 	<router-view></router-view>
 	<Board
 		dark
+		autoConnect
 		:connectors="connectors"
 		:autoConnectErrorHandler="autoConnectErrorHandler"
 		:connectErrorHandler="connectErrorHandler"
