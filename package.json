@@ -8,7 +8,7 @@
 	},
 	"dependencies": {
 		"@vue-dapp/core": "1.0.0-alpha.8",
-		"@vue-dapp/vd-board": "^1.0.0-alpha.4",
+		"@vue-dapp/vd-board": "1.0.0-alpha.5",
 		"ethers": "^6.8.1",
 		"node-stdlib-browser": "^1.2.0",
 		"pinia": "^2.1.7",

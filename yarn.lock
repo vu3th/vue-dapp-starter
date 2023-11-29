@@ -100,10 +100,10 @@
   dependencies:
     tiny-invariant "^1.3.1"
 
-"@vue-dapp/vd-board@^1.0.0-alpha.4":
-  version "1.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@vue-dapp/vd-board/-/vd-board-1.0.0-alpha.4.tgz#198dd12ba1cba804f8a3c79dcdd5d89e4988e707"
-  integrity sha512-i2hOw5INSXcYMJboK9O5Uaw8Yd1pbSdfXz9bs9+9XXXDcgVHUoXeCC7ZfcYFOp8zUM3vRZwhbMjvokDOvV9K6Q==
+"@vue-dapp/vd-board@1.0.0-alpha.5":
+  version "1.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@vue-dapp/vd-board/-/vd-board-1.0.0-alpha.5.tgz#a7a6a788a1a7d71eea4f8bd80ef993bd9ba25ffe"
+  integrity sha512-0kIwGUZ20rpsvE96XsFQvBrvMW/fbNST0mMIKNJ52/P2HeiImsMIBdlQRqENnxnLzzvh7hD17MCf42YAG+A9sQ==
 
 "@vue/compiler-core@3.3.4":
   version "3.3.4"
