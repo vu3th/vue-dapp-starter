@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.0.0-beta.6
     version: 1.0.0-beta.6(pinia@2.1.7)(vue@3.4.5)
   '@vue-dapp/walletconnect':
-    specifier: 1.0.0-beta.2
-    version: 1.0.0-beta.2(@vue-dapp/core@1.0.0-beta.6)(react@18.2.0)
+    specifier: 1.0.0-beta.6
+    version: 1.0.0-beta.6(@vue-dapp/core@1.0.0-beta.6)(react@18.2.0)
   pinia:
     specifier: ^2.1.7
     version: 2.1.7(typescript@5.3.3)(vue@3.4.5)
@@ -1144,8 +1144,8 @@ packages:
       vue: 3.4.5(typescript@5.3.3)
     dev: false
 
-  /@vue-dapp/walletconnect@1.0.0-beta.2(@vue-dapp/core@1.0.0-beta.6)(react@18.2.0):
-    resolution: {integrity: sha512-mlcp4nBu13Q/rmCQTgqunLIZ/NFHs8NN2GBZGOQA/u7d8zSV5SBjg3FwzF6RF42zPw5a7UCEwMZrUkYOTOA5LA==}
+  /@vue-dapp/walletconnect@1.0.0-beta.6(@vue-dapp/core@1.0.0-beta.6)(react@18.2.0):
+    resolution: {integrity: sha512-lyPacRp7n+yP4JTWh7opN6+wWo9e1N+mq3EOF9jL50zBTuZ62mt6uSdsoIECZc61+xw1VUI9p2pu5RVZ8kG0sA==}
     peerDependencies:
       '@vue-dapp/core': workspace:^
     dependencies:

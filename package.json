@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@vue-dapp/core": "1.0.0-beta.6",
-    "@vue-dapp/walletconnect": "1.0.0-beta.2",
+    "@vue-dapp/walletconnect": "1.0.0-beta.6",
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
