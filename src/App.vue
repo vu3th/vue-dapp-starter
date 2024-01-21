@@ -1,30 +1,56 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { MetaMaskConnector, useVueDapp } from '@vue-dapp/core'
+import { WalletConnectConnector } from '@vue-dapp/walletconnect'
+
+const connectors = [
+	new MetaMaskConnector(),
+	new WalletConnectConnector({
+		projectId: '3f3c98042b194264687bf59e104c534a',
+		chains: [1],
+		showQrModal: true,
+		qrModalOptions: {
+			themeMode: 'dark',
+			themeVariables: undefined,
+			desktopWallets: undefined,
+			walletImages: undefined,
+			mobileWallets: undefined,
+			enableExplorer: true,
+			privacyPolicyUrl: undefined,
+			termsOfServiceUrl: undefined,
+		},
+	}),
+]
+
+const { status, isConnected, address, chainId, error, disconnect, connectWith } = useVueDapp()
+
+function onClickMetaMask() {
+	if (!isConnected.value) {
+		connectWith(connectors[0])
+	}
+}
+
+function onClickWalletConnect() {
+	if (!isConnected.value) {
+		connectWith(connectors[1])
+	}
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+	<main>
+		<div v-if="!isConnected">
+			<button :disabled="status !== 'idle'" @click="onClickMetaMask">Connect with MetaMask</button>
+			<button :disabled="status !== 'idle'" @click="onClickWalletConnect">Connect with WalletConnect</button>
+		</div>
+		<button v-else @click="disconnect">Disconnect</button>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+		<div>status: {{ status }}</div>
+		<div>isConnected: {{ isConnected }}</div>
+		<div>error: {{ error }}</div>
+
+		<div v-if="isConnected">
+			<div v-if="chainId !== -1">chainId: {{ chainId }}</div>
+			<div>address: {{ address }}</div>
+		</div>
+	</main>
+</template>
