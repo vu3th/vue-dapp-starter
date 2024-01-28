@@ -1,9 +1,11 @@
-<script setup lang="ts">
-import { MetaMaskConnector, useVueDapp } from '@vue-dapp/core'
+<script lang="ts" setup>
+import { BrowserWalletConnector, VueDappProvider, useVueDapp, type ConnWallet, RDNS } from '@vue-dapp/core'
 import { WalletConnectConnector } from '@vue-dapp/walletconnect'
 
-const connectors = [
-	new MetaMaskConnector(),
+const { status, isConnected, address, chainId, error, disconnect, connectTo, addConnectors } = useVueDapp()
+
+addConnectors([
+	new BrowserWalletConnector(),
 	new WalletConnectConnector({
 		projectId: '3f3c98042b194264687bf59e104c534a',
 		chains: [1],
@@ -19,38 +21,46 @@ const connectors = [
 			termsOfServiceUrl: undefined,
 		},
 	}),
-]
+])
 
-const { status, isConnected, address, chainId, error, disconnect, connectWith } = useVueDapp()
-
-function onClickMetaMask() {
+function onClickMetamask() {
 	if (!isConnected.value) {
-		connectWith(connectors[0])
+		connectTo('BrowserWallet', { rdns: RDNS.metamask })
 	}
 }
 
 function onClickWalletConnect() {
 	if (!isConnected.value) {
-		connectWith(connectors[1])
+		connectTo('WalletConnect')
 	}
+}
+
+function handleConnect(wallet: ConnWallet) {
+	console.log('handleConnect', wallet)
+}
+
+function handleDisconnect() {
+	console.log('handleDisconnect')
 }
 </script>
 
 <template>
-	<main>
-		<div v-if="!isConnected">
-			<button :disabled="status !== 'idle'" @click="onClickMetaMask">Connect with MetaMask</button>
-			<button :disabled="status !== 'idle'" @click="onClickWalletConnect">Connect with WalletConnect</button>
-		</div>
-		<button v-else @click="disconnect">Disconnect</button>
+	<div>
+		<VueDappProvider @connect="handleConnect" @disconnect="handleDisconnect">
+			<div v-if="!isConnected">
+				<button :disabled="status !== 'idle'" @click="onClickMetamask">Connect with MetaMask</button>
+				<button :disabled="status !== 'idle'" @click="onClickWalletConnect">Connect with WalletConnect</button>
+			</div>
+			<button v-else @click="disconnect">Disconnect</button>
 
-		<div>status: {{ status }}</div>
-		<div>isConnected: {{ isConnected }}</div>
-		<div>error: {{ error }}</div>
+			<div>status: {{ status }}</div>
+			<div>isConnected: {{ isConnected }}</div>
+			<div>error: {{ error }}</div>
 
-		<div v-if="isConnected">
-			<div v-if="chainId !== -1">chainId: {{ chainId }}</div>
-			<div>address: {{ address }}</div>
-		</div>
-	</main>
+			<div v-if="isConnected">
+				<div v-if="chainId !== -1">chainId: {{ chainId }}</div>
+				<div>address: {{ address }}</div>
+			</div>
+		</VueDappProvider>
+	</div>
 </template>
