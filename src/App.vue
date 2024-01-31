@@ -47,7 +47,7 @@ function handleDisconnect() {
 <template>
 	<div>
 		<VueDappProvider @connect="handleConnect" @disconnect="handleDisconnect">
-			<div v-if="!isConnected">
+			<div v-if="!isConnected" class="connect-btns">
 				<button :disabled="status !== 'idle'" @click="onClickMetamask">Connect with MetaMask</button>
 				<button :disabled="status !== 'idle'" @click="onClickWalletConnect">Connect with WalletConnect</button>
 			</div>
@@ -64,3 +64,11 @@ function handleDisconnect() {
 		</VueDappProvider>
 	</div>
 </template>
+
+<style>
+.connect-btns {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+</style>
