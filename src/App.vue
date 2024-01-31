@@ -58,7 +58,7 @@ function handleDisconnect() {
 			<div>error: {{ error }}</div>
 
 			<div v-if="isConnected">
-				<div v-if="chainId !== -1">chainId: {{ chainId }}</div>
+				<div v-if="chainId">chainId: {{ chainId }}</div>
 				<div>address: {{ address }}</div>
 			</div>
 		</VueDappProvider>
