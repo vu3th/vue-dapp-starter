@@ -8,3 +8,7 @@ const app = createApp(App)
 app.use(createPinia())
 
 app.mount('#app')
+
+// log version
+import pkg from '../package.json'
+console.log('@vue-dapp/core version:' + pkg.dependencies['@vue-dapp/core'])

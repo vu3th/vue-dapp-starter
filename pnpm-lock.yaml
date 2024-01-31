@@ -6,10 +6,10 @@ settings:
 
 dependencies:
   '@vue-dapp/core':
-    specifier: latest
+    specifier: 1.0.0-beta.17
     version: 1.0.0-beta.17(pinia@2.1.7)(vue@3.4.15)
   '@vue-dapp/walletconnect':
-    specifier: latest
+    specifier: 1.0.0-beta.17
     version: 1.0.0-beta.17(@vue-dapp/core@1.0.0-beta.17)(react@18.2.0)
   pinia:
     specifier: ^2.1.7
