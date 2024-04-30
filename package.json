@@ -9,8 +9,9 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@vue-dapp/core": "1.0.0",
-		"@vue-dapp/walletconnect": "1.0.0",
+		"@vue-dapp/core": "1.2.4",
+		"@vue-dapp/modal": "^1.2.4",
+		"@vue-dapp/walletconnect": "1.2.4",
 		"pinia": "^2.1.7",
 		"vue": "^3.4.15"
 	},
