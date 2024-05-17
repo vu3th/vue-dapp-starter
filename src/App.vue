@@ -3,9 +3,17 @@ import { BrowserWalletConnector, useVueDapp } from '@vue-dapp/core'
 import { VueDappModal, useVueDappModal } from '@vue-dapp/modal'
 import '@vue-dapp/modal/dist/style.css'
 
+import { CoinbaseWalletConnector } from '@vue-dapp/coinbase'
+
 const { addConnectors, isConnected, wallet, disconnect } = useVueDapp()
 
-addConnectors([new BrowserWalletConnector()])
+addConnectors([
+	new BrowserWalletConnector(),
+	new CoinbaseWalletConnector({
+		appName: 'Vue Dapp',
+		jsonRpcUrl: 'https://ethereum-rpc.publicnode.com',
+	}),
+])
 
 function onClickConnectButton() {
 	if (isConnected.value) disconnect()
