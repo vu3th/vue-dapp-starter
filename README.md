@@ -5,7 +5,11 @@ This project is initiated by `npm create vite@latest`
 And then installed
 
 ```
-pnpm add pinia @vue-dapp/core@latest @vue-dapp/walletconnect@latest
+pnpm add pinia
+```
+
+```
+pnpm add @vue-dapp/core@latest @vue-dapp/modal@latest @vue-dapp/coinbase@latest
 ```
 
 ## Vue 3 + TypeScript + Vite
