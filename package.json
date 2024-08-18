@@ -9,9 +9,9 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@vue-dapp/coinbase": "1.5.0",
-		"@vue-dapp/core": "1.5.0",
-		"@vue-dapp/modal": "1.5.0",
+		"@vue-dapp/coinbase": "1.5.1",
+		"@vue-dapp/core": "1.5.1",
+		"@vue-dapp/modal": "1.5.1",
 		"pinia": "^2.1.7",
 		"vue": "^3.4.15"
 	},

@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@vue-dapp/coinbase':
-        specifier: 1.5.0
-        version: 1.5.0(@vue-dapp/core@1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))
+        specifier: 1.5.1
+        version: 1.5.1(@vue-dapp/core@1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))
       '@vue-dapp/core':
-        specifier: 1.5.0
-        version: 1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
+        specifier: 1.5.1
+        version: 1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
       '@vue-dapp/modal':
-        specifier: 1.5.0
-        version: 1.5.0(@vue-dapp/core@1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
+        specifier: 1.5.1
+        version: 1.5.1(@vue-dapp/core@1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3))
@@ -56,8 +56,8 @@ packages:
     resolution: {integrity: sha512-dQjSq/7HaSjRM43FFGnv5keM2HsxpmyV1PfaSVm0nzzjwwTmjOe6J4bC8e3+pTEIgHaHj+1ZlLThRJ2auc/w1Q==}
     engines: {node: '>=6.9.0'}
 
-  '@coinbase/wallet-sdk@4.0.0':
-    resolution: {integrity: sha512-7q8k39a2Iuz30dAEeh86AaSAbLgVPW3gfLa1UYh2IqP7gS+X9witoMEMM8o016K6vxP5N++PrM+Lgu/O1KByBA==}
+  '@coinbase/wallet-sdk@4.0.4':
+    resolution: {integrity: sha512-74c040CRnGhfRjr3ArnkAgud86erIqdkPHNt5HR1k9u97uTIZCJww9eGYT67Qf7gHPpGS/xW8Be1D4dvRm63FA==}
 
   '@esbuild/aix-ppc64@0.19.12':
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
@@ -284,19 +284,19 @@ packages:
   '@volar/typescript@1.11.1':
     resolution: {integrity: sha512-iU+t2mas/4lYierSnoFOeRFQUhAEMgsFuQxoxvwn5EdQopw43j+J27a4lt9LMInx1gLJBC6qL14WYGlgymaSMQ==}
 
-  '@vue-dapp/coinbase@1.5.0':
-    resolution: {integrity: sha512-QpMFVdQ5fF6pVM5icQfhpOnHrheNnGbYdiDTfsxbuLqFwm3DfoKxULB4ansB5Lz50vPL64+BrE7wjoYNYLgPCQ==}
+  '@vue-dapp/coinbase@1.5.1':
+    resolution: {integrity: sha512-h7+TUTCtFwb1rt6kLu/et3Yu7MeFyBkBGcsz0dUxra119nPILxt3IBKvav8hvnX5V7Ae37ydhM/VtXsfamAkQA==}
     peerDependencies:
       '@vue-dapp/core': '*'
 
-  '@vue-dapp/core@1.5.0':
-    resolution: {integrity: sha512-rLhJktWpSNx5zAow1Az8ceDlMZaOhpm8K640IMl0yvpxumdtYAAFsY0ay7u5m38U4BlDdfZSnl51WGm5xJnrWQ==}
+  '@vue-dapp/core@1.5.1':
+    resolution: {integrity: sha512-ihbk2dsySKHoApna0jDkUg3+ac3G3Cdxl4Is0suMmXFsjnWrlTy4l6fBUAYGHn/B8fRpXs41l/aHuI53zrJ5Jg==}
     peerDependencies:
       pinia: ^2.1.7
       vue: ^3.3.7
 
-  '@vue-dapp/modal@1.5.0':
-    resolution: {integrity: sha512-UpSYVVSq4oOT2lU+irF6UXe3JxSDTxHJafdp48/WCGelWFzoYLOcwSIJ0rNsxDZgo7tA67GFf94oO20o0H5fNQ==}
+  '@vue-dapp/modal@1.5.1':
+    resolution: {integrity: sha512-ubPlDYjKSJaAjNQyCEsxOCN0c8jPlUFyGjYlU62J7gkx+hC1BjtmqqZFH+b6+68dQ06eJnCkqarjWC6joK1EKQ==}
     peerDependencies:
       '@vue-dapp/core': '*'
       pinia: '>=2.1.7'
@@ -568,7 +568,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  '@coinbase/wallet-sdk@4.0.0':
+  '@coinbase/wallet-sdk@4.0.4':
     dependencies:
       buffer: 6.0.3
       clsx: 1.2.1
@@ -707,19 +707,19 @@ snapshots:
       '@volar/language-core': 1.11.1
       path-browserify: 1.0.1
 
-  '@vue-dapp/coinbase@1.5.0(@vue-dapp/core@1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))':
+  '@vue-dapp/coinbase@1.5.1(@vue-dapp/core@1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))':
     dependencies:
-      '@coinbase/wallet-sdk': 4.0.0
-      '@vue-dapp/core': 1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
+      '@coinbase/wallet-sdk': 4.0.4
+      '@vue-dapp/core': 1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
 
-  '@vue-dapp/core@1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))':
+  '@vue-dapp/core@1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))':
     dependencies:
       pinia: 2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3))
       vue: 3.4.15(typescript@5.3.3)
 
-  '@vue-dapp/modal@1.5.0(@vue-dapp/core@1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))':
+  '@vue-dapp/modal@1.5.1(@vue-dapp/core@1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3)))(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))':
     dependencies:
-      '@vue-dapp/core': 1.5.0(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
+      '@vue-dapp/core': 1.5.1(pinia@2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3)))(vue@3.4.15(typescript@5.3.3))
       pinia: 2.1.7(typescript@5.3.3)(vue@3.4.15(typescript@5.3.3))
       vue: 3.4.15(typescript@5.3.3)
 
